@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=deskpaper
+GenericName=Desktop Stickers
+Comment=Place stickers above the wallpaper and below every window
+Exec=deskpaper
+Icon=io.github.AlejandroMinor.deskpaper
+Terminal=false
+Categories=Settings;DesktopSettings;
+Keywords=sticker;wallpaper;desktop;widget;calendar;
+StartupNotify=false

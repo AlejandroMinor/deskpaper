@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
+  <!-- A die-cut sticker with its corner peeled: what deskpaper puts on the desktop. -->
+  <defs>
+    <linearGradient id="art" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f28aa6"/>
+      <stop offset="1" stop-color="#f6d55c"/>
+    </linearGradient>
+    <linearGradient id="back" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#d9d4ca"/>
+    </linearGradient>
+  </defs>
+  <g transform="rotate(-8 64 64)">
+    <!-- Shadow under the sticker, missing where the corner has lifted -->
+    <path transform="translate(2 4)" fill="#000" fill-opacity="0.28"
+          d="M36 16H92a20 20 0 0 1 20 20V80L80 112H36a20 20 0 0 1-20-20V36a20 20 0 0 1 20-20Z"/>
+    <!-- White die-cut border -->
+    <path fill="#fff"
+          d="M36 16H92a20 20 0 0 1 20 20V80L80 112H36a20 20 0 0 1-20-20V36a20 20 0 0 1 20-20Z"/>
+    <!-- The picture -->
+    <path fill="url(#art)"
+          d="M40 25H88a15 15 0 0 1 15 15V77L77 103H40a15 15 0 0 1-15-15V40a15 15 0 0 1 15-15Z"/>
+    <circle cx="56" cy="52" r="11" fill="#fff" fill-opacity="0.9"/>
+    <path fill="#e4572e" fill-opacity="0.85" d="M25 88L50 66L66 80L80 70L96 84L77 103H40a15 15 0 0 1-15-15Z"/>
+    <!-- The peeled corner, folded back over the sticker -->
+    <path fill="#000" fill-opacity="0.18" d="M112 80L80 112L84 86Z" transform="translate(-3 -3)"/>
+    <path fill="url(#back)" d="M112 80L80 112L85 85Z"/>
+  </g>
+</svg>

@@ -1,0 +1,14 @@
+#!/usr/bin/env python3
+"""Runs deskpaper straight from a clone of the repository, without installing it.
+
+Same as `python -m deskpaper` with src/ on the path. It also works through a
+symlink (e.g. ~/.local/bin/deskpaper), because the path is resolved to the
+real file before looking for src/.
+"""
+
+import os
+import runpy
+import sys
+
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)), "src"))
+runpy.run_module("deskpaper", run_name="__main__", alter_sys=True)
